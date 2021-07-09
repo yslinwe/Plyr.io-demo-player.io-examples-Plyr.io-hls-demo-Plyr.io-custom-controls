@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Plyr.io demo | player.io examples | Plyr.io hls demo | Plyr.io custom controls</title>
+  <link rel='stylesheet' href='https://cdn.plyr.io/3.6.8/plyr.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<h1 align="center">Plyr.io Customized
+</h1>
+<p align="center"  style="margin-bottom:2em;">By Bloomerzz Web Development</p>
+<br>
+
+<a href="https://github.com/sampotts/plyr/releases"><p align="center"  style="margin-bottom:2em;">To See Latest Releases Click Here</p></a>
+
+<a href="https://cdnjs.com/libraries/plyr"><p align="center"  style="margin-bottom:2em;">PLYR.IO JS AND CSS CDN</p></a>
+
+<div class="container">
+
+<h2>Audio MP3</h2>
+<audio class='audio-player' controls>
+  <source src="https://onedrive.live.com/download?cid=126C973B282483C8&amp;resid=126C973B282483C8%212363&amp;authkey=AKTslNat-KT50GE" type="audio/mp3">
+</audio>
+
+<p>html</p>
+
+<textarea readonly="readonly">
+	<link rel='stylesheet' href='https://cdn.plyr.io/3.6.8/plyr.css'>
+	<script src='https://cdn.plyr.io/3.6.8/plyr.js'></script>
+	<audio class='audio-player' controls>
+	  <source src="https://onedrive.live.com/download?cid=126C973B282483C8&amp;resid=126C973B282483C8%212363&amp;authkey=AKTslNat-KT50GE" type="audio/mp3">
+	</audio>
+</textarea>
+
+<p>js</p>
+
+<textarea readonly="readonly">
+	
+	<script>
+	const players = Array.from(document.querySelectorAll('.audio-player')).map(p => new Plyr(p));
+	</script>
+</textarea>
+
+<p>css</p>
+	<a href="style.css"><h5>See All in 1 Customized css </h5></h5></a>
+<hr>
+
+</br></br></br>
+<h2>HTML MP4</h2>
+<video id="player" playsinline controls data-poster="/path/to/poster.jpg" class="js-player">
+  <source src="https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_1920_18MG.mp4" type="video/mp4" />
+
+  <!-- Captions are optional -->
+  <track kind="captions" label="English captions" src="/path/to/captions.vtt" srclang="en" default />
+</video>
+
+<p>Html</p>
+
+<textarea readonly="readonly">
+	<link rel='stylesheet' href='https://cdn.plyr.io/3.6.8/plyr.css'>
+	<script src='https://cdn.plyr.io/3.6.8/plyr.js'></script>
+	<video id="player" playsinline controls data-poster="/path/to/poster.jpg" class="js-player">
+	  <source src="https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_1920_18MG.mp4" type="video/mp4" />
+	  <!-- Captions are optional -->
+	  <track kind="captions" label="English captions" src="/path/to/captions.vtt" srclang="en" default />
+	</video>
+	
+</textarea>
+
+<p>css</p>
+	<a href="style.css"><h5>See All in 1 Customized css </h5></h5></a>
+	
+<p>js</p>
+<a href="htmlvideoscript.js"><h5>Mp4 video Player js code with custom controls</h5></h5></a>
+
+<hr>
+</br></br></br>
+<h2>Hls Auto Query Selector</h2>
+<video id="dashplayer" controls crossorigin playsinline data-poster="/path/to/poster.jpg">
+<source 
+type="application/x-mpegURL" 
+src="https://bitdash-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8"
+>
+</video>
+
+
+
+<p>Html</p>
+
+<textarea readonly="readonly">
+	<link rel='stylesheet' href='https://cdn.plyr.io/3.6.8/plyr.css'>
+	<script src='https://cdn.plyr.io/3.6.8/plyr.js'></script>
+	<video id="dashplayer" controls crossorigin playsinline data-poster="/path/to/poster.jpg">
+<source 
+type="application/x-mpegURL" 
+src="https://bitdash-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8"
+>
+</video>
+	
+</textarea>
+
+<p>css</p>
+	<a href="style.css"><h5>See All in 1 Customized css </h5></h5></a>
+	
+<p>js</p>
+<a href="hlsautoqualityscript.js"><h5>Hls Auto Quality Selector Js</h5></h5></a>
+
+<hr>
+
+</br></br></br>
+
+</div>
+
+
+  <script src='https://cdn.plyr.io/3.6.8/plyr.js'></script>
+  
+  <script  src="./audioscript.js"></script>
+  
+  <script  src="./htmlvideoscript.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/hls.js"></script>
+  <script  src="./hlsautoqualityscript.js"></script>
+
+</body>
+</html>

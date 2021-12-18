@@ -1,0 +1,43 @@
+/* set font */
+html, input, button{font-family:Google Sans, sans-serif;}
+
+/* set container tag width */
+.container{max-width:800px;margin:0 auto;}
+
+
+textarea {width: 100%; height:120px;}
+
+.js-plyr,.post,.post-content{max-width:100%}
+.js-plyr,.plyr__control--overlaid svg,article pre{display:block}
+.plyr__control--overlaid{padding:1.5rem;background-color:#daf7a6}
+
+/* to change border of plyr.io */
+.plyr--video,.plyr--audio {border-radius: 10px; overflow: hidden; }
+
+
+.plyr--video .plyr__control.plyr__tab-focus, .plyr--video .plyr__control:hover, .plyr--video .plyr__control[aria-expanded=true] {background-color: rgba(156,136,255,.9);}
+
+
+.plyr__menu__container .plyr__control[role=menuitemradio][aria-checked=true]::before {background: #daf7a6;}
+.plyr--video .plyr__control.plyr__tab-focus {box-shadow: #daf7a6; outline: 0;}
+.plyr__control.plyr__tab-focus {box-shadow: #daf7a6;outline: 0;}
+.plyr--video .plyr__controls{background:linear-gradient(transparent,rgba(0,0,0,.5))}
+.plyr--audio .plyr__control.plyr__tab-focus,.plyr--audio .plyr__control:hover,.plyr--audio .plyr__control[aria-expanded=true],.plyr--video .plyr__controls .plyr__control.plyr__tab-focus,.plyr--video .plyr__controls .plyr__control:hover,.plyr--video .plyr__controls .plyr__control[aria-expanded=true],.plyr__menu__container label.plyr__control input[type=radio]:checked+span{background-color:#daf7a6}
+.plyr--full-ui input[type=range]{color:#daf7a6}
+.plyr__poster{background-size:cover}
+.plyr__control--overlaid:focus, .plyr__control--overlaid:hover {background: #daf7a6;}
+.plyr-ratio .plyr__video-wrapper{padding-bottom:56.25%;height:0}
+.plyr-ratio .plyr__video-wrapper video{width:100%;height:100%;position:absolute;top:0;bottom:0;left:0;margin:auto}
+.plyr__menu__container .plyr__control{font-size:14px;font-family:Google Sans,sans-serif;font-weight:500;line-height:1.5}
+.plyr__menu__container ul,.plyr__menu__container ul li{margin:0;list-style:none}
+.plyr--audio .plyr__controls{border:1px solid #daf7a6}
+
+/* change logo url and display position */
+.plyr__video-wrapper::before {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 10;
+  content: "Dl Cloud";
+  color:white;
+}
